@@ -1,6 +1,8 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
 
+// mobile styles
+
 .order {
   background-color: var(--white);
   display: flex;
@@ -39,6 +41,7 @@
     letter-spacing: -0.01em;
   }
   &__serviceInfo {
+    position: relative;
     background-color: var(--body-bg-color);
     display: flex;
     align-items: center;
@@ -83,7 +86,7 @@
       height: 1px;
       left: 1px;
       top: 18px;
-      border: 1px solid var(--primary-text-color);
+      border: 1px solid var(--secondary-text-color);
     }
   }
   .serviceInfo {
@@ -93,10 +96,13 @@
       margin: 25px 0 26px 20px;
     }
     &__stroke {
+      position: absolute;
       width: 0px;
       height: 43px;
-      border: 1px solid var(--stroke-color);
-      margin: 16px 0 16px 20px;
+      left: 64px;
+      top: calc(50% - 43px / 2);
+
+      border: 1px solid #cfd1dd;
     }
     &__peyment {
       display: flex;
@@ -104,7 +110,7 @@
       align-items: flex-start;
       width: 92px;
       height: 43px;
-      margin: 16px 0 16px 24px;
+      margin: 16px 0 16px 44px;
     }
     &__change {
       position: relative;
@@ -122,10 +128,9 @@
         content: '';
         position: absolute;
         width: 53px;
-
         left: 0px;
         top: 17px;
-        border: 0.5px solid var(--btn-bg);
+        border: 1px solid var(--btn-bg);
       }
     }
     .peyment {
@@ -146,6 +151,106 @@
         margin-top: 2px;
         letter-spacing: -0.01em;
         color: var(--secondary-text-color);
+      }
+    }
+  }
+}
+
+// Desktop styles
+
+@media screen and (min-width: 1200px) {
+  .order {
+    height: 665px;
+    width: 460px;
+    &__bannerImg {
+      content: url('/images/AdobeStock_331830515\ 2.png');
+      height: 232px;
+      width: 460px;
+    }
+    &__headline {
+      font-size: var(--fontS-xxl);
+      margin: 32px 109px 0 109px;
+      line-height: 44px;
+      width: 242px;
+      height: 44px;
+    }
+    &__description {
+      font-size: var(--fontS-m);
+      line-height: 26px;
+      width: 349px;
+      height: 52px;
+    }
+    &__serviceInfo {
+      position: relative;
+      width: 428px;
+      height: 83px;
+      margin-top: 40px;
+    }
+    &__proceed {
+      width: 428px;
+      height: 56px;
+    }
+    &__cancle {
+      font-size: var(--fontS-m);
+      line-height: 26px;
+      width: 100px;
+      height: 26px;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 0px;
+        left: 0px;
+        top: 23px;
+      }
+    }
+    .serviceInfo {
+      &__icon {
+        margin: 29px 0 30px 32px;
+      }
+      &__stroke {
+        position: absolute;
+        width: 0px;
+        height: 51px;
+        left: 88px;
+        margin: 0;
+        top: calc(50% - 51px / 2);
+        border: 1px solid #cfd1dd;
+      }
+      &__peyment {
+        width: 104px;
+        height: 49px;
+        margin: 17px 0 17px 64px;
+      }
+      &__change {
+        font-size: var(--fontS-m);
+        line-height: 26px;
+        width: 60px;
+        height: 26px;
+        margin: 29px 32px 28px 112px;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 60px;
+          height: 0px;
+          left: 0px;
+          top: 21px;
+          border: 1px solid var(--btn-bg);
+        }
+      }
+      .peyment {
+        &__planInfo {
+          font-size: var(--fontS-l);
+          line-height: 25px;
+          width: 104px;
+          height: 25px;
+        }
+        &__price {
+          font-size: var(--fontS-s);
+          line-height: 22px;
+          width: 85px;
+          height: 22px;
+        }
       }
     }
   }
