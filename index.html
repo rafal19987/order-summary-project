@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INVO Academy JS Starter with Vite</title>
-</head>
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
 
-<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
-
-<body>
-  <div id="home-page">
-    <div>
-      <img src="/public/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      <h1>INVO Academy JS Starter with Vite</h1>
-      <p>
-        See the README.md for more information on how to start your challenge.
+  <body>
+    <div class="order">
+      <img
+        class="order__bannerImg"
+        src="/images/AdobeStock_331830515 1.png"
+        alt="banner image"
+      />
+      <h1 class="order__headline">Order Summary</h1>
+      <p class="order__description">
+        You're close! Confirm your purchase and complete your order in the next
+        step
       </p>
-      <div class="card">
-        <button id="counter" type="button"></button>
+      <div class="order__serviceInfo serviceInfo">
+        <img
+          class="serviceInfo__icon"
+          src="/images/music.png"
+          alt="note icon"
+        />
+        <div class="serviceInfo__stroke"></div>
+        <div class="serviceInfo__peyment peyment">
+          <h1 class="peyment__planInfo">Annual Plan</h1>
+          <h2 class="peyment__price">$58.99 / year</h2>
+        </div>
+        <a href="#" class="serviceInfo__changeLink">Change</a>
       </div>
+      <button class="order__proceedBtn">Proceed to Payment</button>
+      <a href="#" class="order__cancleBtn">Cancel Order</a>
     </div>
-  </div>
 
-  <script type="module" src="/src/global-scripts/main.js"></script>
-  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
-</body>
-
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script
+      type="module"
+      src="/src/pages/home-page/scripts/home-page.js"
+    ></script>
+  </body>
 </html>
