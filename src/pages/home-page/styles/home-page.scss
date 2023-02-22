@@ -1,2 +1,152 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
+
+.order {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 586px;
+  width: 343px;
+  border-top-right-radius: var(--round);
+  border-top-left-radius: var(--round);
+  &__bannerImg {
+    height: 188px;
+    width: 343px;
+    border-top-right-radius: var(--round);
+    border-top-left-radius: var(--round);
+  }
+  &__headline {
+    font-size: var(--fontS-xl);
+    font-weight: var(--fontW-bold);
+    text-align: center;
+    font-style: normal;
+    margin: 40px 80.5px 0 80.5px;
+    line-height: 33px;
+    width: 182px;
+    height: 33px;
+    color: var(--primary-text-color);
+  }
+  &__description {
+    font-size: var(--fontS-s);
+    font-weight: var(--fontW-medium);
+    text-align: center;
+    margin-top: 16px;
+    line-height: 22.4px;
+    width: 311px;
+    height: 44px;
+    color: var(--secondary-text-color);
+    letter-spacing: -0.01em;
+  }
+  &__serviceInfo {
+    background-color: var(--body-bg-color);
+    display: flex;
+    align-items: center;
+    width: 311px;
+    height: 75px;
+    margin-top: 32px;
+    border-radius: var(--round);
+  }
+  &__proceed {
+    font-size: var(--fontS-m);
+    font-weight: var(--fontW-bold);
+    line-height: 26px;
+    width: 311px;
+    height: 56px;
+    margin-top: 32px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--btn-bg);
+    border-radius: var(--round);
+    &:hover {
+      background-color: var(--btn-hover-bg);
+      cursor: pointer;
+    }
+  }
+  &__cancle {
+    position: relative;
+    text-decoration: none;
+    font-size: var(--fontS-s);
+    font-weight: var(--fontW-bold);
+    line-height: 22px;
+    width: 88px;
+    height: 22px;
+    margin-top: 20px;
+    letter-spacing: -0.01em;
+    text-align: right;
+    color: var(--primary-text-color);
+    &::after {
+      content: '';
+      position: absolute;
+      width: 87px;
+      height: 1px;
+      left: 1px;
+      top: 18px;
+      border: 1px solid var(--primary-text-color);
+    }
+  }
+  .serviceInfo {
+    &__icon {
+      height: 24px;
+      width: 24px;
+      margin: 25px 0 26px 20px;
+    }
+    &__stroke {
+      width: 0px;
+      height: 43px;
+      border: 1px solid var(--stroke-color);
+      margin: 16px 0 16px 20px;
+    }
+    &__peyment {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 92px;
+      height: 43px;
+      margin: 16px 0 16px 24px;
+    }
+    &__change {
+      position: relative;
+      text-decoration: none;
+      font-size: var(--fontS-s);
+      font-weight: var(--fontW-bold);
+      line-height: 22px;
+      width: 53px;
+      height: 22px;
+      text-align: right;
+      letter-spacing: -0.01em;
+      color: var(--btn-bg);
+      margin: 27px 24px 26px 54px;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 53px;
+
+        left: 0px;
+        top: 17px;
+        border: 0.5px solid var(--btn-bg);
+      }
+    }
+    .peyment {
+      &__planInfo {
+        font-size: var(--fontS-m);
+        font-weight: var(--fontW-bold);
+        line-height: 22px;
+        width: 92px;
+        height: 22px;
+        color: var(--primary-text-color);
+      }
+      &__price {
+        font-size: var(--fontS-xs);
+        font-weight: var(--fontW-medium);
+        line-height: 19px;
+        width: 73px;
+        height: 19px;
+        margin-top: 2px;
+        letter-spacing: -0.01em;
+        color: var(--secondary-text-color);
+      }
+    }
+  }
+}
