@@ -3,6 +3,11 @@
 
 import '../styles/home-page.scss'
 
-import { setupCounter } from '../../../global-scripts/scripts/counter/counter.js'
+const proceedBtn = document.getElementById('proceedBtn')
+const loadingIconFromFontAwasome = `<i class="order__proceed--loading-icon fa-solid fa-circle-notch"></i>`
 
-setupCounter(document.querySelector('#counter'))
+const setLoading = (e) => {
+  e.target.innerHTML = `${loadingIconFromFontAwasome} w trakcie ładowania`
+}
+
+proceedBtn.addEventListener('click', (e) => setLoading(e))
