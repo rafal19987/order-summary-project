@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bde05e2d72.js"
+      crossorigin="anonymous"
+    ></script>
     <title>INVO Academy JS Starter with Vite</title>
   </head>
 
@@ -24,7 +28,7 @@
       <div class="order__serviceInfo serviceInfo">
         <img
           class="serviceInfo__icon"
-          src="/public/images/music.png"
+          src="/images/music.png"
           alt="note icon"
         />
         <div class="serviceInfo__stroke"></div>
@@ -32,10 +36,10 @@
           <h1 class="peyment__planInfo">Annual Plan</h1>
           <h2 class="peyment__price">$58.99 / year</h2>
         </div>
-        <a href="#" class="serviceInfo__change link">Change</a>
+        <a href="#" class="serviceInfo__change">Change</a>
       </div>
-      <button class="order__proceed btn">Proceed to Payment</button>
-      <a href="#" class="order__cancle link">Cancel Order</a>
+      <button id="proceedBtn" class="order__proceed">Proceed to Payment</button>
+      <a href="#" class="order__cancle">Cancel Order</a>
     </div>
 
     <script type="module" src="/src/global-scripts/main.js"></script>
